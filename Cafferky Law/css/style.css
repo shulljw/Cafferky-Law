@@ -1,0 +1,258 @@
+
+
+
+/****************************
+      Global Attributes
+****************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1px;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.centered {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+
+/****************************
+      Header Styles
+****************************/
+.header {
+  display: block;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0 0 15px 0;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.phone-number,
+.navigation li {
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #3a5279;
+  font-size: 1.5em;
+}
+
+.phone-number {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.phone-number p {
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+
+.navigation h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  /*background-color: lightgray;*/
+  display: block;
+  padding: 1px 10px 1px 10px;
+  margin: 5px;
+  justify-content: space-around;
+  border-right: 1px solid gray;
+}
+
+.navigation li:last-child {
+  border-right: none;
+}
+
+.logo img {
+  width: 200px;
+}
+
+/****************************
+      Main Content
+****************************/
+
+.top-spacer {
+  width: 100%;
+  height: 50px;
+  background-color: #3a5279;
+  border-bottom: 10px solid #728198;
+  z-index: -1;
+}
+.bottom-spacer {
+  width: 100%;
+  height: 50px;
+  background-color: #3a5279;
+  z-index: -1;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 550px;
+  padding: 0px;
+  background-image: url('../img/portland-aerial-blue.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jumbo-text {
+  display: none;
+}
+
+/* signup form */
+
+.contact-form {
+  width: 95%;
+  background-color: rgba(0,0,0,0.4);
+  margin: 2.5% auto;
+  padding: 20px 40px;
+  border-radius: 10px;
+  color: beige;
+  z-index: 1;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 2.5em;
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+}
+
+textarea {
+  height: 150px;
+  padding: 10px 5px;
+}
+
+input[type="submit"] {
+  font-size: 1.5em;
+  background-color: #3c5a8c;
+  color: white;
+  height: 2em;
+}
+
+.checklist {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.checklist ul {
+  list-style: none;
+}
+
+
+.material-icons {
+  color: #3c5a8c;
+}
+
+
+
+/****************************
+      Footer Styles
+****************************/
+
+.disclaimer {
+  display: block;
+  margin: 25px auto;
+  background-color: #728198;
+  color: lightgray;
+  padding: 20px;
+}
+
+
+
+/****************************
+      Media Queries
+****************************/
+
+@media (min-width: 769px) {
+  .flex-header,
+  .navigation {
+    display: flex;
+  }
+  .flex-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigation {
+    margin: 0;
+    padding: 0;
+  }
+  .navigation li:hover {
+    text-decoration: underline;
+  }
+  .contact-form {
+    width: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    float: left;
+  }
+  
+  .jumbo-text {
+    display: initial;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.2em;
+  }
+  
+  .checklist {
+    width: 45%;
+    margin: 40px 2.5%;
+    padding-left: 60px;
+    float: left;
+  }
+  
+  
+}
+
+@media (min-width: 968px) {
+  .flex-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .logo {
+    margin-right: auto;
+  }
+}
+
+
+
+
+
+
+
